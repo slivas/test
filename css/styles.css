@@ -240,7 +240,8 @@ header ul {
   width: 100%;
 }
 .header__middle .header__info-block {
-  width: 90%;
+  width: 80%;
+  white-space: nowrap;
 }
 .header__middle .header__contacts a {
   color: #4f93ac;
@@ -257,6 +258,10 @@ header ul {
 
 .search {
   position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0 30px;
 }
 .search input[type=search] {
   border: 1px solid #4f93ac;
@@ -301,6 +306,7 @@ header ul {
   padding-right: 10px;
   position: relative;
   font-size: 16px;
+  white-space: nowrap;
 }
 .header__checkout a {
   color: #9f3b5e;

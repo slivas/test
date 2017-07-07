@@ -217,7 +217,8 @@ header {
     }
   }
   .header__info-block {
-    width: 90%;
+    width: 80%;
+    white-space: nowrap;
   }
   .header__contacts {
     a {
@@ -236,6 +237,8 @@ header {
 }
 .search {
   position: relative;
+  flex-grow: 1;
+  margin: 0 30px;
   input[type=search] {
     border: 1px solid $aqua;
     border-radius: 5px;
@@ -276,6 +279,7 @@ header {
   padding-right: 10px;
   position: relative;
   font-size: 16px;
+  white-space: nowrap;
   a {
     color: $purple;
     > * {
