@@ -134,6 +134,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-width: 1400px;
 }
 
 footer {
@@ -234,6 +235,10 @@ header ul {
 .header__middle {
   padding: 40px 0;
 }
+.header__middle .logo {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
 .header__middle .logo a, .header__middle .logo img {
   display: block;
   height: 100%;
@@ -258,10 +263,10 @@ header ul {
 
 .search {
   position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin: 0 30px;
+  -webkit-box-flex: 1.5;
+      -ms-flex-positive: 1.5;
+          flex-grow: 1.5;
+  margin: 0 3%;
 }
 .search input[type=search] {
   border: 1px solid #4f93ac;
@@ -396,6 +401,9 @@ header ul {
   width: 20px;
   -webkit-transition-duration: .4s;
           transition-duration: .4s;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .set .accordion-content {

@@ -118,6 +118,7 @@ body {
   min-height: 100vh;
   height: auto;
   flex-direction: column;
+  min-width: 1400px;
 }
 footer {
   display: flex;
@@ -210,6 +211,7 @@ header {
 .header__middle {
   padding: 40px 0;
   .logo {
+    flex-shrink: 0;
     a, img {
       display: block;
       height: 100%;
@@ -237,8 +239,8 @@ header {
 }
 .search {
   position: relative;
-  flex-grow: 1;
-  margin: 0 30px;
+  flex-grow: 1.5;
+  margin: 0 3%;
   input[type=search] {
     border: 1px solid $aqua;
     border-radius: 5px;
@@ -371,6 +373,8 @@ header {
   height: 25px;
   width: 20px;
   transition-duration: .4s;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .icon-arrow-down2 {
 
